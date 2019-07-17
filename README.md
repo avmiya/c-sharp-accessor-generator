@@ -1,69 +1,56 @@
 # c-sharp-accessor-generator README
 
-この拡張モジュールはクラス変数宣言からC＃アクセサを生成します。
 This extension generate C# accessor from the class variable declarations.
 
-## 特徴
+# 特徴 Feature
 
-実際のエクステンションのスクリーンショットを含む、エクステンションの特定の機能について説明してください。イメージパスはこのREADMEファイルを基準にしています。
+modifier…
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Zd_GKYQvzBk/0.jpg)]
-(https://www.youtube.com/watch?v=Zd_GKYQvzBk)
+initial value…
 
-たとえば、拡張プロジェクトのワークスペースの下にimageサブフォルダがあるとします。
+line comment…
 
-\！\ [feature X \] \（images / feature-x.png \）
+## it's Unrelated!
 
->ヒント：多くの一般的な拡張機能はアニメーションを利用しています。これはあなたの拡張機能を披露するための優れた方法です！従うことが簡単な、焦点を絞った短いアニメーションをお勧めします。
+Add '_' to the beginning of the variable.
 
-##必要条件
+    private int _hoge = 100;    // temp comment
 
-要件や依存関係がある場合は、それらを説明し、それらをインストールおよび構成する方法を説明したセクションを追加してください。
+Right click menu is select to "Generate C# Accessor"… ↓
 
-##拡張設定
+    public int hoge {
+        get { retrun _hoge; }
+        set { _hoge = value; }
+    }
 
-エクステンションが `contrib.configuration`エクステンションポイントを通して任意のVS Code設定を追加する場合に含めてください。
+There is also "Getter Onry" & "Setter Onry"
 
-例えば：
+    public int hoge { get { return _hoge; } }
+    public int hoge { set { _hoge = value; } }
 
-この拡張機能は次の設定に役立ちます。
 
-* `myExtension.enable`：この拡張機能を有効/無効にする
-* `myExtension.thing`：何かをするために` blah`に設定
+## Known issues
 
-＃＃ 既知の問題点
+## A lot!!
 
-既知の問題を指摘することで、ユーザーが自分の拡張機能に対して重複する問題を解決することを制限できます。
+I use "private time" to make "This Extension".
 
-＃＃ リリースノート
+Don't expect too much.
 
-エクステンションをアップデートするにつれて、ユーザはリリースノートに感謝します。
+## Release notes
 
-### 1.0.0
+### 0.1.0
 
-〜の初期リリース
+First release!
 
-### 1.0.1
+### 0.1.1
 
-＃を修正しました。
+Register GitHub.
 
-### 1.1.0
+### 0.1.2
 
-機能X、Y、およびZを追加しました。
+Write this readme.
 
 -------------------------------------------------- -------------------------------------------------- -------
-
-## Markdownを使って作業する
-
-**注：** Visual Studio Codeを使用してREADMEを作成することができます。これは便利なエディタのキーボードショートカットです。
-
-*エディタを分割する（macOSの場合は `Cmd + \`、WindowsとLinuxの場合は `Ctrl + \`）
-*プレビューの切り替え（macOSでは `Shift + CMD + V`、WindowsとLinuxでは` Shift + Ctrl + V`）
-*マークダウンスニペットのリストを見るには `Ctrl + Space`（Windows、Linux）または` Cmd + Space`（macOS）を押してください。
-
-＃＃＃ 詳細については
-
-* [Visual Studioコードのマークダウンサポート]（http://code.visualstudio.com/docs/languages/markdown）
-* [マークダウン構文のリファレンス]（https://help.github.com/articles/markdown-basics/）
 
 **楽しい！**
