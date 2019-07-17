@@ -1,10 +1,14 @@
 # c-sharp-accessor-generator README
 
-これはあなたの拡張機能 "c-sharp-accessor-generator"のREADMEです。簡単な説明を書き終えたら、次のセクションを含めることをお勧めします。
+この拡張モジュールはクラス変数宣言からC＃アクセサを生成します。
+This extension generate C# accessor from the class variable declarations.
 
 ## 特徴
 
 実際のエクステンションのスクリーンショットを含む、エクステンションの特定の機能について説明してください。イメージパスはこのREADMEファイルを基準にしています。
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Zd_GKYQvzBk/0.jpg)]
+(https://www.youtube.com/watch?v=Zd_GKYQvzBk)
 
 たとえば、拡張プロジェクトのワークスペースの下にimageサブフォルダがあるとします。
 
