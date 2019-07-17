@@ -7,7 +7,7 @@
 	"author": { "name": "avmiya" },
 	"engines": { "vscode": "^1.36.0" },
 	"categories": [ "Other" ],
-	"icon": "images/icon.png",
+	"icon": "image/icon.png",
 	"galleryBanner": {
 		"color": "#C80000",
 		"theme": "dark"
