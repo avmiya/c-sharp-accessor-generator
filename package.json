@@ -2,11 +2,17 @@
 	"name": "c-sharp-accessor-generator",
 	"displayName": "C# Accessor Generator",
 	"description": "This extension generate C# accessor from the class variable declarations.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"publisher": "avmiya",
-	"author": { "name": "avmiya" },
-	"engines": { "vscode": "^1.36.0" },
-	"categories": [ "Other" ],
+	"author": {
+		"name": "avmiya"
+	},
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
 	"icon": "image/icon.png",
 	"galleryBanner": {
 		"color": "#C80000",
@@ -33,23 +39,25 @@
 				"title": "Generate C# Accessor - Setter Onry"
 			}
 		],
-		"menus": { "editor/context": [
-			{
-				"when": "editorTextFocus",
-				"command": "extension.generateAccessor",
-				"title": "Generate C# Accessor"
-			},
-			{
-				"when": "editorTextFocus",
-				"command": "extension.generateAccessorG",
-				"title": "Generate C# Accessor - Getter Onry"
-			},
-			{
-				"when": "editorTextFocus",
-				"command": "extension.generateAccessorS",
-				"title": "Generate C# Accessor - Setter Onry"
-			}
-		]}
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorTextFocus",
+					"command": "extension.generateAccessor",
+					"title": "Generate C# Accessor"
+				},
+				{
+					"when": "editorTextFocus",
+					"command": "extension.generateAccessorG",
+					"title": "Generate C# Accessor - Getter Onry"
+				},
+				{
+					"when": "editorTextFocus",
+					"command": "extension.generateAccessorS",
+					"title": "Generate C# Accessor - Setter Onry"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -69,7 +77,7 @@
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.0.0-next.0"
 	},
-  	"homepage": "https://github.com/avmiya/c-sharp-accessor-generator/blob/master/README.md",
+	"homepage": "https://github.com/avmiya/c-sharp-accessor-generator/blob/master/README.md",
 	"bugs": {
 		"url": "https://github.com/avmiya/c-sharp-accessor-generator/issues",
 		"email": "avmiya@gmail.com"
