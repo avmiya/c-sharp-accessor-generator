@@ -2,7 +2,7 @@
 	"name": "c-sharp-accessor-generator",
 	"displayName": "C# Accessor Generator",
 	"description": "This extension generate C# accessor from the class variable declarations.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "avmiya",
 	"author": {
 		"name": "avmiya"
